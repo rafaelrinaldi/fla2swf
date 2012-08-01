@@ -21,15 +21,14 @@ if [[ $@ == "" ]]; then
 	exit
 fi
 
-# Documents to be opened.
-documents=$@
-
-# Open all Flash files of given path.
-if [[ -d $documents ]]; then
-	open $documents/*.fla
-else
-  open $documents
-fi
-
+for source in $@
+do
+	if [[ -d $source ]]; then
+		open $source/*.fla
+	else
+		open $source
+	fi
+done
+ 
 # Executing JSFL script.
 open publish_all.jsfl

@@ -23,6 +23,8 @@ function publish() {
 		document.publish();
 	}
 
-	alert("All documents have been published!");
+	if(confirm("Everything has been published! Do you want to close all opened files?")) {
+		fl.closeAll();
+	}
 
 }

@@ -16,7 +16,7 @@ if(documents.length == 0) {
 
 function publish() {
 
-	alert("Getting ready to publish " + documents.length + " files...");
+	alert("Getting ready to publish " + documents.length + " file" + (documents.length > 1 ? "s" : "") + "...");
 
 	for(var count = 0; count < documents.length; ++count) {
 		document = documents[count];

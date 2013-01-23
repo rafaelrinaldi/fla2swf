@@ -1,8 +1,7 @@
-# publish-flash
-Handy script to help you publish a batch of .fla files.
+# fla2swf
+Publish a list of .fla files in a batch.
 
----
-### Usage
+## How to use it
 
 Publishing all .fla files inside a folder:
 	
@@ -15,3 +14,6 @@ Publishing specific .fla files:
 Publishing all .fla files from a folder plus a few specific items:
 
 	sh publish_all.sh foo/ bar/foo.fla bar/bar.fla
+
+## License
+[MIT](http://opensource.org/licenses/MIT).
